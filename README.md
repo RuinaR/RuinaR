@@ -120,15 +120,13 @@ Python AI Worker / FastAPI Server / Flutter GUI로 분리된 구조에서 이벤
 
 **담당 구현 내용**
 
-- Python AI Worker 기반 이벤트 처리 프레임워크 구조 설계
-- 객체 탐지 결과를 공통 DetectionResult / Event 구조로 정규화
-- 이벤트 START / ACTIVE / END 상태 관리 흐름 구현
-- JSONL 기반 이벤트 직렬화 및 서버 연동 구조 구현
-- FastAPI 기반 이벤트 조회 API 구성
+- Python AI Worker 기반 이벤트 처리 프레임워크 설계
+- DetectionResult / Event / EventFilter 기반 이벤트 상태 관리 구조 구현
+- JSONL 이벤트 직렬화 및 FastAPI 서버 연동 구조 구현
 - Flutter GUI의 API 이벤트 목록 / 상세 / 서버 상태 패널 연동
-- 실행 가이드, 구조 문서, 발표용 문서 정리
+- 실행 가이드와 구조 문서 정리
 
-**기여 증빙 커밋**
+**Commit Evidence**
 
 - [프레임워크 완성 및 문서 보강](https://github.com/kimwook123/hiyoung_team_github/commit/7d7da14d2b8adb4832e88a9e31cd71bca3f77749)
 - [서버 이벤트/클립 저장소 구조 정리](https://github.com/kimwook123/hiyoung_team_github/commit/5ffdb2d59ed481fce095651fdaf474424322efda)

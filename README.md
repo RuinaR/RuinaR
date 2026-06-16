@@ -1,6 +1,7 @@
 # 최원준 | Game Client Programmer
 
 C++ / C# / Unity / DirectX / Python
+
 단순히 기능을 화면에 붙이는 것보다,  
 그 기능이 어떤 구조 안에서 동작하고, 어떻게 저장·복원되며, 이후에 어떻게 유지보수될 수 있는지를 고민합니다.
 

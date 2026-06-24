@@ -1,0 +1,21 @@
+name: Fetch hwplib artifact
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download hwplib
+        run: |
+          mkdir -p out
+          curl -L --fail --retry 3 -o out/hwplib-1.1.10.jar https://repo.maven.apache.org/maven2/kr/dogfoot/hwplib/1.1.10/hwplib-1.1.10.jar
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: hwplib-1.1.10
+          path: out/hwplib-1.1.10.jar
+          if-no-files-found: error
